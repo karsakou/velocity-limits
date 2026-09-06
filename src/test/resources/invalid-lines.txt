@@ -1,0 +1,10 @@
+this is not json
+{"id":"1","customer_id":"1","load_amount":"$abc","time":"2000-01-01T00:00:00Z"}
+{"id":"2","customer_id":"1","load_amount":"3000.00","time":"2000-01-01T00:00:00Z"}
+{"id":"3","customer_id":"1","load_amount":"$-10.00","time":"2000-01-01T00:00:00Z"}
+{"id":"4","customer_id":"1","load_amount":"$10.00","time":"2000-01-01 00:00:00"}
+{"id":"5","customer_id":"1","time":"2000-01-01T00:00:00Z"}
+{"id":"6","load_amount":"$10.00","time":"2000-01-01T00:00:00Z"}
+{"id":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","customer_id":"1","load_amount":"$10.00","time":"2000-01-01T00:00:00Z"}
+{"id":"8","customer_id":"1","load_amount":"$10000000000.00","time":"2000-01-01T00:00:00Z"}
+null

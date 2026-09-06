@@ -1,0 +1,6 @@
+plugins {
+	// Lets Gradle download JDK 21 automatically on a machine that lacks it.
+	id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+}
+
+rootProject.name = 'velocity-limits'

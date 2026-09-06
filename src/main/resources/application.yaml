@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: velocity-limits
+  main:
+    banner-mode: off
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+  jpa:
+    hibernate:
+      ddl-auto: validate   # Liquibase owns the schema; Hibernate just checks it
+    open-in-view: false
+
+velocity:
+  limits:
+    daily-amount: 5000.00
+    weekly-amount: 20000.00
+    daily-count: 3
+
+logging:
+  level:
+    root: WARN                          # a batch CLI should be quiet; framework startup logs are suppressed
+    com.ihar.velocity.limits.cli: INFO  # the run summary and skipped-line warnings
+    # com.ihar.velocity.limits: DEBUG   # uncomment to log every decision with its totals and failing rule
